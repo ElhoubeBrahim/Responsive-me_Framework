@@ -15,7 +15,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/elhoube.brahim" class="res-muted-link">
+              <a href="https://github.com/ElhoubeBrahim/Responsive-me_Framework" class="res-muted-link">
                 <i class="ri-github-fill"></i>
               </a>
             </li>

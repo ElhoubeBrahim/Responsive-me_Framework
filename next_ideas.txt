@@ -1,0 +1,27 @@
+=============================== Bugs To Fix ===============================
+
+  01 => Reduce The Code Tag Content By Looking For Solutions
+  02 => Fix The Pagination Width
+  03 => Fix Sidebar z-index Problem
+
+=============================== Next Updates ===============================
+
+  01 => Add Styled Inputs (Checkboxes, Radioboxes, Ranges, Numbers, Switches ...)
+  02 => Add Print Classes
+  03 => Add Video & Audio Classes
+  04 => Add Color Classes To Help People With عمى الألوان
+  05 => Add Sass Framework Core res-me Generator In Next Generations
+  06 => Add Animations In Next Generations
+  07 => Extract Grid File From The Framework
+  08 => Update The Vanilla JS Files Using JS OOP (!) and Function To reduce The JS Code
+  09 => Add a Good Tooltip
+  10 => Make z-index Of Components Clean
+  11 => Add Some Hover Transitions (scale, rotate, move ...)
+
+=============================== Before Publishing ===============================  
+
+  01 => Add Patreon Account
+  02 => Add Github Repositry Link
+  03 => Look For Tips & Tricks Before Publishing
+  04 => Add a README File
+  05 => Add Favicon

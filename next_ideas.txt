@@ -17,11 +17,3 @@
   09 => Add a Good Tooltip
   10 => Make z-index Of Components Clean
   11 => Add Some Hover Transitions (scale, rotate, move ...)
-
-=============================== Before Publishing ===============================  
-
-  01 => Add Patreon Account
-  02 => Add Github Repositry Link
-  03 => Look For Tips & Tricks Before Publishing
-  04 => Add a README File
-  05 => Add Favicon

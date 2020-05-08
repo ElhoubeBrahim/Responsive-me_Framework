@@ -8,7 +8,7 @@ Responsive-me is an Open Source front end Libruary, I Create it For Testing My F
 
 - Clone This Repo, & extract Files.
 - Install a Local Server `xampp`, `wampp`, `lampp` ...
-- Place The Extracted Files On Your Server root
+- Place The Extracted Files On Your Server root, & Rename The Parent To `www.responsive-me.com` 
 - Go To http://localhost/www.responsive-me.com, & Enjoy ^_^
 
 > If You Renamed The Folder `www.responsive-me.com`, Make Sure That You Edit The `$website_url` Variable, in The `classes/config.php` File.

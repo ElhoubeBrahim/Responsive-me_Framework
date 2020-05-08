@@ -41,17 +41,17 @@
         </ul>
         <hr class="res-sm-hide">
         <ul class="nav-gp res-unstyled-list res-col res-flex res-col-2 xs-12">
-          <a href="">
+          <a href="https://www.facebook.com/elhoube.brahim">
             <li>
               <i class="ri-facebook-fill ri-fw" aria-hidden="true"></i>
             </li>
           </a>
-          <a href="">
+          <a href="https://twitter.com/BrahimElhoube">
             <li>
               <i class="ri-twitter-fill ri-fw" aria-hidden="true"></i>
             </li>
           </a>
-          <a href="">
+          <a href="https://github.com/ElhoubeBrahim/Responsive-me_Framework">
             <li>
               <i class="ri-github-fill ri-fw" aria-hidden="true"></i>
             </li>

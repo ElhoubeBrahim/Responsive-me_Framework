@@ -1,0 +1,46 @@
+/* ############################## Accordion ############################## */
+
+.res-accordion {
+  border: 1px #ddd solid;
+
+  .section {
+
+    .acc-header {
+      padding: 1rem;
+      border-bottom: 1px #ddd solid;
+      cursor: pointer;
+      transition: .3s all ease-in-out;
+
+      &:hover {
+        background-color: rgba(#000, .1);
+      }
+    }
+
+    .acc-content {
+      padding: 20px;
+      display: none;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px #ddd solid;
+    }
+
+    &.active {
+      .acc-content {
+        display: block;
+      }
+    }
+  }
+}
+
+.res-collapsible {
+  .content {
+    display: none;
+  }
+
+  &.active {
+    .content {
+      display: block;
+    }
+  }
+}

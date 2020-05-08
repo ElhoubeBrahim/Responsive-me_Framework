@@ -1,0 +1,58 @@
+/* ############################## Lists ############################## */
+
+.res-unstyled-list {
+  list-style: none;
+  padding: 0;
+}
+
+.res-inline-list {
+  li {
+    display: inline-block;
+    margin-inline: 5px;
+  }
+}
+
+.res-bordered-list {
+  border: 1px #eee solid;
+  list-style: none;
+  padding: 0;
+
+  .list-item {
+    padding: 10px;
+    padding-inline: 20px;
+    margin: 0;
+  }
+
+  .list-item:not(:last-child) {
+    border-bottom: 1px #eee solid;
+  }
+
+  &.res-inline-list {
+    .list-item {
+      border: none;
+    }
+  }
+}
+
+.res-hoverable-list {
+  @extend .res-bordered-list;
+
+  .list-item {
+    cursor: pointer;
+    display: block;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .list-item:hover,
+  .active {
+    background-color: #fafafa;
+    color: #444;
+  }
+}
+
+.res-bordered-list.res-flex,
+.res-hoverable-list.res-flex {
+  .list-item {
+    border: none;
+  }
+}

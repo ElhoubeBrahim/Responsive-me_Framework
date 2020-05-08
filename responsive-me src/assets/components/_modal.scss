@@ -1,0 +1,61 @@
+/* ############################## Modal ############################## */
+
+.res-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(#000, .5);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s all ease-in-out;
+
+  .content {
+    margin: 5rem auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    transition: .4s all ease-in-out;
+    transform: scale(0);
+
+    .res-close {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      height: 48px;
+      width: 48px;
+      text-align: center;
+      line-height: 48px;
+      border-radius: 50%;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .header {
+      padding-bottom: 10px;
+      padding-inline-start: 15px;
+      border-bottom: 1px #ddd solid;
+      font-size: 2rem;
+    }
+
+    .section {
+      padding: 15px;
+    }
+
+    .footer {
+      padding-top: 10px;
+      padding-inline-start: 15px;
+      border-top: 1px #ddd solid;
+    }
+  }
+}
+
+.res-launch-modal-btn {
+  i {
+    margin: 0;
+  }
+}

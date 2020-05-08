@@ -1,0 +1,100 @@
+/* ############################## Visibility ############################## */
+
+.res-show {
+  display: block !important;
+}
+
+.res-hide {
+  display: none !important;
+}
+
+// Reset Responsive Visibility Classes
+
+.res-xs-hide,
+.res-sm-hide,
+.res-md-hide,
+.res-lg-hide,
+.res-xs-sm-hide,
+.res-sm-md-hide,
+.res-md-lg-hide {
+  display: block !important;
+}
+
+.res-xs-show,
+.res-sm-show,
+.res-md-show,
+.res-lg-show,
+.res-xs-sm-show,
+.res-xs-sm-show,
+.res-sm-md-show,
+.res-md-lg-show {
+  display: none !important;
+}
+
+// Screen and Up
+// Extra Small Screens Only
+@media (max-width: $xs-screen) {
+  .res-xs-hide {
+    display: none !important;
+  }
+
+  .res-xs-show {
+    display: block !important;
+  }
+}
+
+// Small Screens And Up
+@media (min-width: $sm-screen) {
+  .res-sm-hide {
+    display: none !important;
+  }
+
+  .res-sm-show {
+    display: block !important;
+  }
+}
+
+// Medium Screens And Up
+@media (min-width: $md-screen) {
+  .res-md-hide {
+    display: none !important;
+  }
+
+  .res-md-show {
+    display: block !important;
+  }
+}
+
+// Large Screens And Up
+@media (min-width: $lg-screen) {
+  .res-lg-hide {
+    display: none !important;
+  }
+
+  .res-lg-show {
+    display: block !important;
+  }
+}
+
+// Screen To Screen
+// Small To Medium Screens
+@media (min-width: $sm-screen) and (max-width: $md-screen) {
+  .res-sm-md-hide {
+    display: none !important;
+  }
+
+  .res-sm-md-show {
+    display: block !important;
+  }
+}
+
+// Medium To Large Screens
+@media (min-width: $md-screen) and (max-width: $lg-screen) {
+  .res-md-lg-hide {
+    display: none !important;
+  }
+
+  .res-md-lg-show {
+    display: block !important;
+  }
+}

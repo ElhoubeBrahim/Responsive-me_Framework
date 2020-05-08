@@ -1,0 +1,32 @@
+/* ############################## Page Pagination ############################## */
+
+.res-pagination {
+  display: flex;
+  margin-bottom: 1rem;
+  padding: 0;
+
+  .item {
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+
+    &:hover {
+      background-color: rgba(#000, .1);
+    }
+  }
+}
+
+.res-bordered-pagination {
+  @extend .res-pagination;
+
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .item {
+    &:not(:last-child) {
+      border-inline-end: 1px #ddd solid;
+    }
+  }
+}

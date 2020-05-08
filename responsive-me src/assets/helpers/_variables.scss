@@ -1,0 +1,60 @@
+// Color Variables
+
+$red: #f44336;
+$pink: #d81b60;
+$purple: #8e24aa;
+$blue: #0d47a1;
+$green: #1b5e20;
+$yellow: #ffd600;
+$orange: #f57c00;
+$brown: #795548;
+$grey: #777;
+
+$colors: (
+  "red": #f44336,
+  "light-red": lighten(#f44336, 20),
+  "dark-red": darken(#f44336, 20),
+  //
+    "pink": #d81b60,
+  "light-pink": lighten(#d81b60, 20),
+  "dark-pink": darken(#d81b60, 20),
+  //
+    "purple": #8e24aa,
+  "light-purple": lighten(#8e24aa, 20),
+  "dark-purple": darken(#8e24aa, 20),
+  //
+    "blue": #0d47a1,
+  "light-blue": lighten(#0d47a1, 20),
+  "dark-blue": darken(#0d47a1, 20),
+  //
+    "green": #1b5e20,
+  "light-green": lighten(#1b5e20, 20),
+  "dark-green": darken(#1b5e20, 20),
+  //
+    "yellow": #ffd600,
+  "light-yellow": lighten(#ffd600, 20),
+  "dark-yellow": darken(#ffd600, 20),
+  //
+    "orange": #f57c00,
+  "light-orange": lighten(#f57c00, 20),
+  "dark-orange": darken(#f57c00, 20),
+  //
+    "brown": #795548,
+  "light-brown": lighten(#795548, 20),
+  "dark-brown": darken(#795548, 20),
+  //
+    "grey": #777,
+  "light-grey": lighten(#777, 20),
+  "dark-grey": darken(#777, 20),
+  //
+    "black": #222222,
+  "white": #fff,
+  "transparent": transparent,
+);
+
+// Grid Variables
+
+$xs-screen: "800px";
+$sm-screen: "801px";
+$md-screen: "992px";
+$lg-screen: "1200px";

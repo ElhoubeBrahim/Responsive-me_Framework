@@ -1,0 +1,39 @@
+/* ############################## Page Sidebar ############################## */
+
+.res-sidebar {
+  width: 300px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  z-index: 9999;
+  transform: translateX(-150%);
+  transition: 0.4s all ease-in-out;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .res-close {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.res-right-sidebar {
+  @extend .res-sidebar;
+
+  left: auto;
+  right: 0;
+  transform: translateX(150%);
+
+  .res-close {
+    right: auto;
+    left: 10px;
+  }
+}
+
+.res-toggle-sidebar-btn {
+  i {
+    margin: 0;
+  }
+}

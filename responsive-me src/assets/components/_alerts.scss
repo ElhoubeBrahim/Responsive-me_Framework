@@ -1,0 +1,19 @@
+/* ############################## Alerts ############################## */
+
+.res-alert {
+  @extend .res-card;
+
+  padding: 1.2rem;
+  position: relative;
+
+  .res-close {
+    position: absolute;
+    right: 10px;
+    top: 0.9rem;
+  }
+}
+
+[dir=rtl] .res-alert .res-close {
+  right: auto;
+  left: 10px;
+}

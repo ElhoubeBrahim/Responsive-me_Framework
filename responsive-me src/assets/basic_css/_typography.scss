@@ -1,0 +1,74 @@
+/* ############################## Typography ############################## */
+
+h1,
+.h1 {
+  font-size: 3rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.75rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.5rem;
+}
+
+h4,
+.h4 {
+  font-size: 2.25rem;
+}
+
+h5,
+.h5 {
+  font-size: 2rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.75rem;
+}
+
+.res-sm-txt {
+  font-size: 0.75rem;
+}
+
+.res-md-txt {
+  font-size: 1rem;
+}
+
+.res-lg-txt {
+  font-size: 2rem;
+}
+
+.res-xlg-txt {
+  font-size: 3em;
+}
+
+mark,
+.res-mark-txt {
+  color: #333;
+  background-color: lighten($yellow, 30);
+  padding: 2px;
+}
+
+.res-txt-right {
+  text-align: right;
+}
+
+.res-txt-left {
+  text-align: left;
+}
+
+.res-txt-center {
+  text-align: center;
+}
+
+.res-txt-upper {
+  text-transform: uppercase;
+}
+
+.res-txt-lower {
+  text-transform: lowercase;
+}

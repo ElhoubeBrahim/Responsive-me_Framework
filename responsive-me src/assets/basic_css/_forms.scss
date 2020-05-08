@@ -1,0 +1,139 @@
+/* ############################## Forms ############################## */
+
+// Input Fields
+.res-input,
+.res-input {
+  display: block;
+  width: 100%;
+  background-color: #fcfdfd;
+  color: #444;
+  border-radius: 5px;
+  border: 1px #ddd solid;
+  padding: 10px;
+  transition: 0.4s all ease-in-out;
+  margin-bottom: 0.5rem;
+
+  &::placeholder {
+    font-size: 85%;
+    color: #aaa;
+  }
+
+  &:focus {
+    border-color: #fcfdfd;
+    box-shadow: 0 0 0 2px lighten($blue, 30);
+    outline: none;
+  }
+}
+
+input:disabled,
+textarea:disabled,
+textarea:read-only {
+  cursor: not-allowed;
+  border-style: dashed;
+  resize: none;
+
+  &:focus {
+    border-color: #ddd;
+    box-shadow: none;
+  }
+}
+
+.res-input.res-valid-input,
+.res-input.res-non-valid-input {
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.res-input.res-non-valid-input {
+  border: 2px solid $red !important;
+}
+
+.res-input.res-valid-input {
+  border: 2px solid lighten($green, 20) !important;
+}
+
+.res-input-gp {
+  margin-bottom: 1rem;
+  position: relative;
+
+  input {
+    @extend .res-input;
+  }
+}
+
+// Input With Icon
+.res-input-with-icon {
+  .res-input {
+    display: flex;
+    align-items: center;
+    padding: 0;
+
+    i {
+      margin-inline-start: 5px;
+      margin-inline-end: 5px;
+      font-size: 2em;
+    }
+
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      margin-inline-start: 5px;
+      margin-inline-end: 5px;
+    }
+  }
+}
+
+.res-input-gp-1 {
+  @extend .res-input-gp;
+
+  label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-inline-start: 10px;
+    pointer-events: none;
+    transition: 0.4s all ease-in-out;
+    transform-origin: 0 0;
+    color: #aaa;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px #eee solid;
+    background-color: #fff;
+    padding-inline-start: 10px;
+
+    &:focus,
+    &:target {
+      box-shadow: none;
+      border-bottom: 1px #eee solid;
+
+      & + label {
+        color: lighten($blue, 10);
+        top: 0;
+        transform: translateY(-50%) scale(0.9);
+      }
+
+      & ~ span::after {
+        width: 100%;
+      }
+    }
+  }
+
+  span::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: lighten($blue, 10);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    border-radius: 4px;
+    transition: 0.4s all ease-in-out;
+  }
+}

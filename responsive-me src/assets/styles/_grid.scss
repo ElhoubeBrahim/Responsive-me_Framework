@@ -1,0 +1,120 @@
+/* ############################## Grid ############################## */
+
+.res-container {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+}
+
+.res-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.res-col {
+  width: 100%;
+  position: relative;
+}
+
+@for $col from 1 through 12 {
+  .res-col-#{$col} {
+    width: percentage((100/12) * $col) / 100;
+  }
+
+  .res-offset-#{$col} {
+    margin-inline-start: percentage((100/12) * $col) / 100;
+  }
+
+  .res-pull-#{$col} {
+    right: percentage((100/12) * $col) / 100;
+  }
+
+  .res-push-#{$col} {
+    left: percentage((100/12) * $col) / 100;
+  }
+}
+
+// Extra Small Screens
+@media (max-width: $xs-screen) {
+  @for $col from 1 through 12 {
+    .xs-#{$col} {
+      width: percentage((100/12) * $col) / 100;
+    }
+
+    .res-offset-xs-#{$col} {
+      margin-inline-start: percentage((100/12) * $col) / 100;
+    }
+
+    .res-pull-xs-#{$col} {
+      right: percentage((100/12) * $col) / 100;
+    }
+
+    .res-push-xs-#{$col} {
+      left: percentage((100/12) * $col) / 100;
+    }
+  }
+}
+
+// Small Screens
+@media (min-width: $sm-screen) {
+  @for $col from 1 through 12 {
+    .sm-#{$col} {
+      width: percentage((100/12) * $col) / 100;
+    }
+
+    .res-offset-sm-#{$col} {
+      margin-inline-start: percentage((100/12) * $col) / 100;
+    }
+
+    .res-pull-sm-#{$col} {
+      right: percentage((100/12) * $col) / 100;
+    }
+
+    .res-push-sm-#{$col} {
+      left: percentage((100/12) * $col) / 100;
+    }
+  }
+}
+
+// Medium Screens
+@media (min-width: $md-screen) {
+  @for $col from 1 through 12 {
+    .md-#{$col} {
+      width: percentage((100/12) * $col) / 100;
+    }
+
+    .res-offset-md-#{$col} {
+      margin-inline-start: percentage((100/12) * $col) / 100;
+    }
+
+    .res-pull-md-#{$col} {
+      right: percentage((100/12) * $col) / 100;
+    }
+
+    .res-push-md-#{$col} {
+      left: percentage((100/12) * $col) / 100;
+    }
+  }
+}
+
+// Large Screens
+@media (min-width: $lg-screen) {
+  @for $col from 1 through 12 {
+    .lg-#{$col} {
+      width: percentage((100/12) * $col) / 100;
+    }
+
+    .res-offset-lg-#{$col} {
+      margin-inline-start: percentage((100/12) * $col) / 100;
+    }
+
+    .res-pull-lg-#{$col} {
+      right: percentage((100/12) * $col) / 100;
+    }
+
+    .res-push-lg-#{$col} {
+      left: percentage((100/12) * $col) / 100;
+    }
+  }
+}

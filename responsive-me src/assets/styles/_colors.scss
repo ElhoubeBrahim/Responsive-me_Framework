@@ -1,0 +1,29 @@
+/* ############################## Color Classes ############################## */
+
+// Generate Color Classes Automatically
+@each $color_name, $color_value in $colors {
+
+  // Background Color Classes
+  .res-bg-#{$color_name} {
+    background-color: $color_value !important;
+  }
+
+  // Text Color Classes
+  .res-txt-#{$color_name} {
+    color: $color_value !important;
+  }
+
+  // Border Color Classes
+  .res-#{$color_name}-border {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $color_value !important;
+  }
+
+  // Hover Bg Colors
+  .res-#{$color_name}-hover:hover {
+    transition: .4s all ease-in-out;
+    background-color: $color_value !important;
+    color: #fff;
+  }
+}

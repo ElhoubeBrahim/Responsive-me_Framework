@@ -1,0 +1,13 @@
+/* ############################## Shadows ############################## */
+
+@for $i from 0 through 5 {
+  @if $i == 0 {
+    .res-shadow-#{$i} {
+      box-shadow: none !important;
+    } 
+  } @else {
+    .res-shadow-#{$i} {
+      box-shadow: 0 0 #{$i*5}px  rgba(0,0,0,0.14), 0 0 #{$i*5}px  rgba(0,0,0,0.14), 0 0 #{$i*5}px  rgba(0,0,0,0.14), 0 0 #{$i*5}px  rgba(0,0,0,0.14);
+    }
+  }
+}

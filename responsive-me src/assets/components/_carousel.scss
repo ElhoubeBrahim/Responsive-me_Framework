@@ -1,0 +1,54 @@
+/* ############################## Carousel ############################## */
+
+.res-carousel {
+  min-height: 350px;
+  height: 400px;
+  position: relative;
+
+  .slides {
+    min-height: 350px;
+    height: 400px;
+    position: relative;
+
+    .item {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      pointer-events: none;
+      transition: .5s all ease-in-out;
+      box-shadow: inset 0 0 10px rgba(#000, .3);
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .dots {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    z-index: 2;
+
+    .dot {
+      height: .75rem;
+      width: .75rem;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.5);
+      transition: .1s all ease-in-out;
+      margin-right: 5px;
+      margin-left: 5px;
+      cursor: pointer;
+
+      &.active {
+        background-color: #fff;
+      }
+    }
+  }
+}

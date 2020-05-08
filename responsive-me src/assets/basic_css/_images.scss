@@ -1,0 +1,20 @@
+/* ############################## Images ############################## */
+
+.res-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.res-circle-img {
+  @extend .res-img;
+
+  border-radius: 50% !important;
+}
+
+.res-thumbnail-img {
+  @extend .res-img;
+
+  padding: .20rem;
+  border: 1px #ddd solid;
+  border-radius: 1rem;
+}

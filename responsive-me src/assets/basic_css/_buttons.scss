@@ -1,0 +1,86 @@
+/* ############################## Buttons ############################## */
+
+.res-btn {
+  // Common Btns Style
+  border: 1px transparent solid;
+  padding: 0.25rem;
+  padding-inline-start: 0.5rem;
+  padding-inline-end: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  transition: 0.3s all ease-in-out;
+
+  // Default Btn Style
+  background-color: $grey;
+  color: #fff;
+
+  // Common Btns Style
+  i {
+    margin-inline-end: 0.5rem;
+    font-size: 1.5em;
+  }
+
+  &:hover {
+    background-color: darken($grey, 10);
+  }
+
+  &:active {
+    box-shadow: inset 1px 1px 5px #00000080;
+  }
+}
+
+a.res-btn:hover {
+  color: #fff;
+}
+
+.res-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background-color: #ddd !important;
+  box-shadow: none;
+
+  &:hover {
+    background-color: #ddd !important;
+  }
+
+  &:active {
+    box-shadow: none !important;
+  }
+}
+
+@each $color_name, $color_value in $colors {
+  // Background Color Classes
+  .res-#{$color_name}-btn {
+    @extend .res-btn;
+
+    background-color: $color_value !important;
+
+    &:hover {
+      background-color: darken($color_value, 10) !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .res-#{$color_name}-btn.shadow {
+    box-shadow: 0 1px 0 1px lighten($color_value, 40);
+  }
+}
+
+.res-btn-gp {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+
+  button,
+  a {
+    margin-inline-end: 0.5rem;
+  }
+}

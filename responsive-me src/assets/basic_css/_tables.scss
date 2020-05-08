@@ -1,0 +1,62 @@
+/* ############################## Tables ############################## */
+
+table.res-table {
+  margin-bottom: 1rem;
+
+  thead {
+    border-bottom: 2px #eee solid;
+    background-color: #fafafa;
+
+    th {
+      padding: 10px;
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px #eee solid;
+
+      td {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+table.res-striped-table {
+  @extend .res-table;
+
+  thead {
+    background-color: #fff;
+  }
+
+  tbody {
+    tr:nth-of-type(2n + 1) {
+      background-color: #fafafa;
+    }
+  }
+}
+
+table.res-hoverable-table {
+  @extend .res-table;
+
+  tbody {
+    tr {
+      transition: 0.3s all ease-in-out;
+    }
+
+    tr:hover,
+    .active {
+      background-color: #eee;
+    }
+  }
+}
+
+.res-responsive-table {
+  display: block;
+  overflow-x: auto;
+
+  table {
+    margin: 0;
+  }
+}

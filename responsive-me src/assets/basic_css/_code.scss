@@ -1,0 +1,208 @@
+/* ############################## Codes ############################## */
+
+pre,
+code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+// Code Default Style
+code.res-code {
+  background-color: #020e24;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 1rem;
+
+  // Common Style
+  padding: 20px;
+  position: relative;
+  overflow-x: auto;
+  direction: ltr;
+
+  .language {
+    top: 5px;
+    right: 5px;
+    color: #282c34;
+    background-color: #f7f7f7;
+
+    // Common Style
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    user-select: none;
+  }
+
+  .break {
+    padding: 0.3rem;
+  }
+}
+
+code.inline-code {
+  padding: 0;
+  display: inline;
+  white-space: nowrap;
+}
+
+// Code Style 1 --atom theme--
+code.res-atom-code {
+  @extend .res-code;
+
+  background-color: #282c34;
+
+  .line {
+    white-space: nowrap;
+  }
+
+  // Line Break
+  .break {
+    padding: 0.3rem;
+  }
+
+  .plain-txt {
+    color: #abb2bf;
+  }
+
+  // var, function, class, const, for, while, if, else ...
+  .keyword {
+    color: #c678dd;
+  }
+
+  // :,;/=+ ...
+  .ponctuation {
+    color: #abb2bf;
+  }
+
+  .comment {
+    color: darken(#abb2bf, 10);
+    font-size: 95%;
+    font-style: italic;
+  }
+
+  // "string" 'string' `string`
+  .string {
+    color: #98c379;
+  }
+
+  // function 'name'
+  .function {
+    color: #61afef;
+  }
+
+  // class 'Name'
+  .class {
+    color: #d19a66;
+  }
+
+  // var 'name'
+  .variable {
+    color: #de6a73;
+  }
+
+  // <tag>
+  .tag {
+    color: #de6a73;
+  }
+
+  // <tag 'attribute'>
+  .attribute {
+    color: #d19a66;
+  }
+}
+
+// Code Style 2 --Hacker theme--
+code.res-hacker-code {
+  @extend .res-code;
+
+  background-color: #000;
+  color: green !important;
+
+  // install, clear, cls, cd, mkdir ...
+  .keyword {
+    color: #c678dd;
+  }
+
+  // :,;/=+<> ...
+  .ponctuation {
+    color: #fff;
+  }
+
+  .comment {
+    color: #222;
+    font-style: italic;
+  }
+}
+
+// Code Style 1 --light theme--
+code.res-light-code {
+  @extend .res-code;
+
+  background-color: #f7f7f7;
+  color: #666;
+  border: 1px #ddd solid;
+
+  .language {
+    background-color: #282c34;
+    color: #f7f7f7;
+  }
+
+  .line {
+    white-space: nowrap;
+  }
+
+  // Line Break
+  .break {
+    padding: 0.3rem;
+  }
+
+  .plain-txt {
+    color: #282c34;
+  }
+
+  // var, function, class, const, for, while, if, else ...
+  .keyword {
+    color: #992abb;
+  }
+
+  // :,;/=+<> ...
+  .ponctuation {
+    color: #5984aa;
+  }
+
+  .comment {
+    color: #ccc;
+    font-style: italic;
+  }
+
+  // "string" 'string' `string`
+  .string {
+    color: #98c379;
+  }
+
+  // function 'name'
+  .function {
+    color: #61afef;
+  }
+
+  // class 'Name'
+  .class {
+    color: #d19a66;
+  }
+
+  // var 'name'
+  .variable {
+    color: #d75c5d;
+  }
+
+  // <tag>
+  .tag {
+    color: #d75c5d;
+  }
+
+  // <tag 'attribute'>
+  .attribute {
+    color: #72aad7;
+  }
+}

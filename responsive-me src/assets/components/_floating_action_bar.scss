@@ -1,0 +1,50 @@
+/* ############################## Floating Action Bar ############################## */
+
+.res-fl-action-bar {
+  position: fixed;
+  bottom: 3rem;
+  right: 1rem;
+  text-align: center;
+  line-height: 48px;
+  z-index: 999;
+
+  .actions {
+
+    .action {
+      height: 40px;
+      width: 40px;
+      line-height: 40px;
+      border: 1px #ddd solid;
+      border-radius: 50%;
+      margin: 10px auto;
+      background-color: #fff;
+      cursor: pointer;
+      transform: scale(0);
+      transition: .3s all ease-in-out;
+
+      &.show {
+        transform: scale(1);
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .action-btn {
+    font-size: 1.5rem;
+    border: 1px #ddd solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.308);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s all ease-in-out;
+  
+    &:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+    }
+  }
+}

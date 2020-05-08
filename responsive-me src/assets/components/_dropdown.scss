@@ -1,0 +1,17 @@
+/* ############################## Dropdown ############################## */
+
+.res-dropdown {
+  .dropdown-btn {
+    padding: 5px;
+    border: 1px #ddd solid;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+
+    .list-item {
+      padding: 10;
+    }
+  }
+}

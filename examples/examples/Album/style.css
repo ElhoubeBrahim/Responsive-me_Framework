@@ -1,0 +1,38 @@
+.album-header {
+  padding: 50px;
+}
+
+.album-content {
+  background-color: #fafafa;
+}
+
+.album-content .res-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.album-content .picture {
+  padding: 10px;
+}
+
+.album-content .picture>div {
+  background-color: #fff;
+}
+
+.album-content .picture .image {
+  height: 200px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.album-content .picture .description {
+  text-align: justify;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer .copyright>div {
+  justify-content: space-between;
+}

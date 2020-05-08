@@ -1,0 +1,83 @@
+.intro {
+  padding: 150px 0;
+  background-color: #eee;
+}
+
+.intro p {
+  margin: 20px auto;
+  border-top: 1px #ddd solid;
+  border-bottom: 1px #ddd solid;
+  padding: 10px 5px;
+}
+
+.intro .actions {
+  justify-content: center;
+}
+
+.intro .actions button {
+  margin: 10px;
+  padding: 10px;
+}
+
+.why_us {
+  padding: 100px 0;
+}
+
+.why_us .box {
+  padding: 10px;
+}
+
+.why_us .box h6 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px #ddd solid;
+}
+
+.why_us .box p {
+  text-align: justify;
+}
+
+.testimonial {
+  padding: 100px 0;
+  background-color: #eee;
+}
+
+.testimonial h5 {
+  margin-bottom: 50px;
+}
+
+.testimonial .res-carousel .slides .item .res-row {
+  height: 100%;
+  align-items: center;
+}
+
+.testimonial .res-carousel .slides .item .picture {
+  padding: 10px;
+}
+
+.testimonial .res-carousel .slides .item .picture .img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact h5 {
+  margin-bottom: 50px;
+}
+
+.contact form {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer .copyright .res-container {
+  justify-content: space-between;
+}

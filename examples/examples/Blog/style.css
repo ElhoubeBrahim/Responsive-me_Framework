@@ -1,0 +1,58 @@
+.posts,
+.sidebar {
+  padding: 20px;
+}
+
+.posts .post {
+  align-items: center;
+  padding: 2px;
+  border: 1px #ddd solid;
+}
+
+.posts .post:not(:last-child) {
+  border-bottom: none;
+}
+
+.posts .post .picture {
+  padding: 5px;
+  height: 150px;
+}
+
+.posts .post .picture .img {
+  height: 100%;
+  width: 100%;
+  background-color: #eee;
+}
+
+.posts .post .info {
+  padding: 5px;
+}
+
+.posts .res-pagination {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.posts .res-pagination .active {
+  text-decoration: underline;
+  background-color: #fafafa;
+}
+
+.sidebar .about,
+.sidebar .categories,
+.sidebar .archive {
+  padding: 10px 20px;
+}
+
+.sidebar .archive ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer {
+  padding: 10px;
+}
+
+footer .copyright .res-container {
+  justify-content: space-between;
+}

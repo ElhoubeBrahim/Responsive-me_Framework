@@ -56,7 +56,7 @@ For More Info Just Open The Folder & Read The Code Comments ^_^
 That Folder Contains The Responsive-me Documentation, Each File is a Doc Paper.
 To Add New Paper, Juste Paste The Code Below & Fill it With Correct Data :
 
-```
+```php
  <?php require ($_SERVER['DOCUMENT_ROOT'] . '/www.responsive-me.com classes/control.php'); ?>
   <?php 
     // Go to 'classes/Documentation.class.php' For Info 
